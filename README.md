@@ -57,9 +57,20 @@ pip install -r requirements.txt
 
 ## Instruction and explaination for using this code
 
-### 1. Inputs structure
+### 1. Run command
 
-As this is running on FastAPI framework, the input will be in JSON format. The format is
+1. Make sure that you're in the workspace directory in your command prompt
+2. This is the command to run the API:
+   ```bash
+   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+   ```
+   and this would run on the [link](http://0.0.0.0:8000) `http://0.0.0.0:8000`. You could configure with any IP address or host it in your server.
+   to be specific this is the breakdown of this above command
+   > `uvicorn <program name>:app --host <your suitable host number> --port <your suitable port number> --reload 
+
+### 2. Inputs structure
+
+- As this is running on FastAPI framework, the input will be in JSON format. The format is
    ```json
    {
         "user_id": 1,
@@ -69,3 +80,10 @@ As this is running on FastAPI framework, the input will be in JSON format. The f
         "pdf_file_base64": "PDF file in base64 format",
         "max_mark": 100,
    }
+   ```
+- For testing purpose, I created a python porgram `client.py` where I send this JSON file to the API and return the output with the help of the `requests` library. I configure the link in "/submit".
+- If you need to run for testing the API, you could simply run this command instead of that long one
+  ```bash
+  uvicorn main:app --reload
+  ```
+  The API would just run at the [link](http://127.0.0.1:8000) on your default localhost `127.0.0.1` and in your default port number `8000`
