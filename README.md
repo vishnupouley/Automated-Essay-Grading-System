@@ -4,7 +4,7 @@ Developed an AI-driven automated essay grading system using Generative AI(Gemini
 
 ## Setup this software into your system
 
-### **1. Make sure Python 3.11 and pip are installed using these commands**
+### 1. Make sure Python 3.11 and pip are installed using these commands
 
 *For python*
 
@@ -18,9 +18,9 @@ python --version
 pip --version
 ```
 
-if not installed you need to install Python 3.11 to download Python and pip
+> If not installed you need to install **Python 3.11** to download Python and pip
 
-### **2. After that, download the necessary packages of Python 3.11**
+### 2. After that, download the necessary packages of Python 3.11
 
 ```bash
 pip install -r requirements.txt
