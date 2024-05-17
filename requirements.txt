@@ -1,0 +1,20 @@
+# PyMuPDF for PDF processing
+PyMuPDF
+
+# Requests for making HTTP requests
+Requests
+
+# FastAPI for building APIs
+FastAPI
+
+# Google-GenerativeAI for interacting with Google's generative AI models
+Google-GenerativeAI
+
+# Pillow for image processing
+Pillow
+
+# Uvicorn for ASGI server to run FastAPI
+Uvicorn
+
+# command for installing requirements
+# pip install -r requirements.txt
