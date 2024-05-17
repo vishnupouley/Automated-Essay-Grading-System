@@ -66,7 +66,7 @@ pip install -r requirements.txt
    ```
    and this would run on the [link](http://0.0.0.0:8000) `http://0.0.0.0:8000`. You could configure with any IP address or host it in your server.
    to be specific this is the breakdown of this above command
-   > `uvicorn <program name>:app --host <your suitable host number> --port <your suitable port number> --reload 
+   > `uvicorn "program name":app --host "your suitable host number" --port "your suitable port number" --reload 
 
 ### 2. Inputs structure
 
