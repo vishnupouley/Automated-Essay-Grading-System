@@ -53,5 +53,19 @@ pip install -r requirements.txt
     api_key = [] # Paste the three API keys in this list
     return api_key[index - 1]
    ```
-3. efer
-4. 
+3. Save the code
+
+## Instruction and explaination for using this code
+
+### 1. Inputs structure
+
+As this is running on FastAPI framework, the input will be in JSON format. The format is
+   ```json
+   {
+        "user_id": 1,
+        "question_id": 101,
+        "assessment_id": "1A001",
+        "question_text": "Question",
+        "pdf_file_base64": "PDF file in base64 format",
+        "max_mark": 100,
+   }
