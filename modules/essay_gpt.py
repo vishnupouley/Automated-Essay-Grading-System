@@ -79,6 +79,7 @@ def essay_correction_gemini(
         f"You are a strict professor who corrects the answer from this following topics: {topic}. "
         f"Given the following question: {question}. "
         f"This is the answer: \n{essay}"
+        "Do read the answer carefully and then correct it. The answer may contain the question of this answer so it is important to read the answer carefully. "
     )
 
     # Add the description of the images to the prompt (if provided)
@@ -92,8 +93,8 @@ def essay_correction_gemini(
         '{"Mark": "the mark (out of '
         f"{mark}"
         ') (in numbers)", "Suggestions": ["all of the Suggestions(positive and negative) in a list(not more than 10 suggestions)"]}'
-        "Avoid adding any symbols like '\\n', '\\t', '\\r' in the JSON format. Make sure the answer is in JSON format."
-        "While giving the suggestions, don't add any additional information. Just give the accurate suggestions related to the topics above. "
+        "Avoid adding any symbols like '\\n', '\\t', '\\r', '\\', '\"', '\\b', '\\f' in the JSON format. Make sure your answer is in JSON format."
+        "While giving the suggestions, don't add any additional information. Just give the accurate suggestions related to the topics above. The answer ot the question won't be in JSON format. But your answer should be in JSON format."
         "If the answer is not related to the question and the topic at the least, the mark should be 0 and give suggestions to improve."
     )
 
